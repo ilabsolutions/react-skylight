@@ -30,8 +30,10 @@
     "react": "*"
   },
   "dependencies": {
+    "object-assign": "^4.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.11.4",
     "babel-core": "^6.3.26",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.1",

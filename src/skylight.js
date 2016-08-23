@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles';
+import assign from 'object-assign'
 
 class SkyLight extends React.Component {
 
@@ -52,10 +53,10 @@ class SkyLight extends React.Component {
   render() {
     var overlay;
 
-    var dialogStyles = Object.assign({}, styles.dialogStyles, this.props.dialogStyles);
-    var overlayStyles = Object.assign({}, styles.overlayStyles, this.props.overlayStyles);
-    var closeButtonStyle = Object.assign({}, styles.closeButtonStyle, this.props.closeButtonStyle);
-    var titleStyle = Object.assign({}, styles.title, this.props.titleStyle);
+    var dialogStyles = assign({}, styles.dialogStyles, this.props.dialogStyles);
+    var overlayStyles = assign({}, styles.overlayStyles, this.props.overlayStyles);
+    var closeButtonStyle = assign({}, styles.closeButtonStyle, this.props.closeButtonStyle);
+    var titleStyle = assign({}, styles.title, this.props.titleStyle);
 
     if (this.state.isVisible) {
         overlayStyles.display = 'block';
